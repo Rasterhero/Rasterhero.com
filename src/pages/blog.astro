@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import PromptPost from '../components/PromptPost.astro'
+const allPosts = await Astro.glob('../pages/prompts/*.md');
+const pageTitle = "My Astro Learning Prompt";
+---
+<BaseLayout pageTitle={pageTitle}>
+  <p>This is where I will post about my journey learning Astro.</p>
+  <ul>
+    {allPosts.map((post) =>  <PromptPost url={post.url} title={post.frontmatter.title} />)}
+  </ul>
+</BaseLayout>

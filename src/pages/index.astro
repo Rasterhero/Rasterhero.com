@@ -1,13 +1,14 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Logo from '../components/Logo.astro';
-import Hero from '../components/Hero.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const pageTitle = 'RasterHero - The leading prompt search for AI-assisted designers and creative proffesionals.';
 ---
 
-<Layout title="RasterHero - Create AI hero images based on your content">
-  <main>
-    <Logo />
-    <Hero />
-  </main>
-</Layout>
-
+<BaseLayout pageTitle={pageTitle}>
+    <h1>We are the prompt archive for AI-assisted designers and creative professionals.</h1>
+    <p>We make it easy to share share and collect your best prompt recipies for Midjourney and ChatGPT.</p>
+    <a href="">Start browsing</a>
+    <!-- <Greeting client:load messages={["Hi", "Hallo", "Hola", "Habari"]} /> -->
+</BaseLayout>

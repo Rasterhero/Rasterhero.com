@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PromptPost from '../../components/PromptPost.astro'
+
+export async function getStaticPaths() {
+  const allPrompts = await Astro.glob('../prompts/*.md');
+
+  const uniqueTags = [...new Set(allPrompts.map((post) => post.frontmatter.tags).flat())];
+
+  return uniqueTags.map((tag) => {
+    const filteredPrompts = allPrompts.filter((post) => post.frontmatter.tags.includes(tag));
+    return {
+      params: { tag },
+      props: { Prompts: filteredPrompts },
+    };
+  });
+}
+
+const { tag } = Astro.params;
+const { Prompts } = Astro.props;
+---
+<BaseLayout pageTitle={tag}>
+  <p>Prompts tagged with {tag}</p>
+  <ul>
+    {Prompts.map((post) => <PromptPost url={post.url} title={post.frontmatter.title}/>)}
+  </ul>
+</BaseLayout>
