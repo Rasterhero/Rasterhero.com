@@ -7,11 +7,13 @@ author: 'Tim van den Bosch'
 image:
     url: ''
     alt: ''
-tags: ["rockstar, cover, studio, award, lightning"]
+tags: ["rockstar", "cover", "studio", "award", "lightning"]
 ---
 
+## Input custom subject
 <input name="subject">
 
+### Prompt recipe
 ```
 [SUBJECT] as a rockstar cover photo award winning photography studio lighting --v 4
 ```

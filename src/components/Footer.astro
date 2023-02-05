@@ -1,20 +1,15 @@
 ---
 const platform = "github";
-const username = "withastro";
+const username = "withpromptly";
 import Social from './Social.astro';
 ---
 
-<footer>
-  <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
-  <Social platform="twitter" username="astrodotbuild" />
-  <Social platform="github" username="withastro" />
-  <Social platform="youtube" username="astrodotbuild" />
+<footer class="flex items-center p-10 border-t border-neutral-300">
+  <p class="mr-10">Learn more about this projects on: </p>
+  <div class="flex gap-x-8">
+    <Social platform="twitter" username="withpromptly" />
+    <Social platform="github" username="withpromptly" />
+    <Social platform="youtube" username="withpromptly" />
+  </div>
 </footer>
 
-<style>
-    footer {
-      display: flex;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-  </style>

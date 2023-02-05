@@ -20,8 +20,8 @@ const { tag } = Astro.params;
 const { Prompts } = Astro.props;
 ---
 <BaseLayout pageTitle={tag}>
-  <p>Prompts tagged with {tag}</p>
-  <ul>
+  <h2 class="text-2xl mb-8">Prompts tagged with <strong class="font-bold">{tag}</strong></h2>
+  <ul class="flex flex-1 gap-8">
     {Prompts.map((post) => <PromptPost url={post.url} title={post.frontmatter.title}/>)}
   </ul>
 </BaseLayout>
