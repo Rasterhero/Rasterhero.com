@@ -10,8 +10,8 @@ image:
 tags: ["rockstar", "cover", "studio", "award", "lightning"]
 ---
 
-## Input custom subject
-<input name="subject">
+<!-- ## Input custom subject
+<input name="subject"> -->
 
 ### Prompt recipe
 ```
