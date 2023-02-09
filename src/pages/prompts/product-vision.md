@@ -10,7 +10,7 @@ image:
 tags: ["chatgtp", "product vision", "business", "strategy", "lightning"]
 ---
 
-<!-- ## Input custom subject
+<!-- ### Input custom subject
 <input name="subject"> -->
 
 ### Step 1:
@@ -18,42 +18,42 @@ tags: ["chatgtp", "product vision", "business", "strategy", "lightning"]
 Write a business plan for a [SUBJECT]
 ```
 
-## Step 2:
+### Step 2:
 ```
 List top target users
 ```
 
-## Step 3:
+### Step 3:
 ```
-What are ideas for digital tools  that will help my moving company?
+What are ideas for digital tools that will help my [SUBJECT]?
 ```
 
-## Step 4:
+### Step 4:
 ```
 Make it more innovative
 ```
 
-## Step 6:
+### Step 6:
 ```
 What are the needs of my customers
 ```
 
-## Step 7:
+### Step 7:
 ```
 What are my business goals
 ```
 
-## Step 8:
+### Step 8:
 ```
 Make it more specific
 ```
 
-## Step 9:
+### Step 9:
 ```
 Can you write a vision statement in ons sentence
 ```
 
-## Step 9:
+### Step 9:
 ```
 Can you give five alternatives, going from personal to more business like
 ```
