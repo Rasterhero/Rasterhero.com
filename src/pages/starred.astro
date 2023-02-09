@@ -3,24 +3,27 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 const pageTitle = "About";
 
-const identity = {
-  firstName: "Tim",
-  country: "Netherlands",
-  occupation: "AI designer",
-  hobbies: ["photography", "birdwatching", "baseball","test"],
-};
+// const identity = {
+//   firstName: "Tim",
+//   country: "Netherlands",
+//   occupation: "AI designer",
+//   hobbies: ["photography", "birdwatching", "baseball","test"],
+// };
 
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+// const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 
-const happy = true;
-const finished = true;
-const goal = 4;
+// const happy = true;
+// const finished = true;
+// const goal = 4;
 
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h1>About us</h1>
-  <p>Here are a few facts about me:</p>
+  <h1>Stars</h1>
+
+
+
+  <!-- <p>Here are a few facts about me:</p>
   <ul>
     <li>My name is {identity.firstName}.</li>
     <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
@@ -37,5 +40,5 @@ const goal = 4;
 
   {finished && <p>I finished this tutorial!</p>}
 
-  {goal > 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+  {goal > 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>} -->
 </BaseLayout>

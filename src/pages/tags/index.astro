@@ -5,10 +5,9 @@ const tags = [...new Set(allPrompts.map((post) => post.frontmatter.tags).flat())
 const pageTitle = "Tag Index";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <div class="tags flex flex-1 gap-8">
+  <div class="grid grid-cols-2 md:grid-cols-6 gap-8 px-10">
     {tags.map((tag) => (
-      <a class="block bg-black text-white p-2" href={`/tags/${tag}`}>{tag}</a>
+      <a class="block text-sm text-center bg-black text-white p-2 rounded-md" href={`/tags/${tag}`}>{tag}</a>
     ))}
-
   </div>
 </BaseLayout>

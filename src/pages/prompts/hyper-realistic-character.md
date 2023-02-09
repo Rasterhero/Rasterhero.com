@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Hyper realistic character'
-pubDate: 2022-08-01
+pubDate: 2022-08-02
 description: 'Hyper realistic concept art'
 author: 'Tim van den Bosch'
 image:

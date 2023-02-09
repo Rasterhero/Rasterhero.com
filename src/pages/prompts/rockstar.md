@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Rockstar'
-pubDate: 2022-07-01
+pubDate: 2022-07-02
 description: 'Display ourself as a rockstart poster'
 author: 'Tim van den Bosch'
 image:

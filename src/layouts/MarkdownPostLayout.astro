@@ -3,18 +3,26 @@ import BaseLayout from './BaseLayout.astro';
 const { frontmatter } = Astro.props;
 ---
 <BaseLayout pageTitle={frontmatter.title}>
-  <p><em>{frontmatter.description}</em></p>
+  <h2 class="text-4xl mb-6">{frontmatter.description}</h2>
   <p>{frontmatter.pubDate.slice(0,10)}</p>
-
   <p>Written by: {frontmatter.author}</p>
 
-  <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
+  <!-- <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} /> -->
 
-  <div class="tags flex flex-1 gap-8">
+  <div class="tags flex flex-1 gap-8 my-10">
     {frontmatter.tags.map((tag) => (
-      <a class="block bg-black text-white p-2 rounded-md" href={`/tags/${tag}`}>{tag}</a>
+      <a class="block bg-slate-600 text-white p-2 rounded-md text-xs" href={`/tags/${tag}`}>{tag}</a>
     ))}
   </div>
 
   <slot />
 </BaseLayout>
+
+
+
+<style is:global>
+  pre {
+    margin: 10px 0;
+    padding: 10px;
+  }
+</style>
